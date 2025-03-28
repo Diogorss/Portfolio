@@ -1,155 +1,166 @@
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1a1a1a; 
-    margin: 0px;
-    position: sticky;
-    top: 0;
-    padding: 10px 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  margin: 0px;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 section {
-    padding: 20px;
-    background-color: #262626; 
-    color: #e0e0e0; 
-    height: auto;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 10px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  background-color: #262626;
+  color: #e0e0e0;
+  height: auto;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 h3 {
-    color: #ff9800; 
-    border-bottom: 2px solid #ff9800;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+  color: #ff9800;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 body {
-    background-color: #121212; 
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
 }
 
-
 .Menu a {
-    display: inline-block;
-    font-size: 18px;
-    color: #e0e0e0;
-    font-weight: bold;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s;
+  display: inline-block;
+  font-size: 18px;
+  color: #e0e0e0;
+  font-weight: bold;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .Menu a:hover {
-    color: #ff9800; 
+  color: #ff9800;
 }
 
-
-.txt-animado{
-    font-size: 30px;
-    font-weight: 300;
+.txt-animado {
+  font-size: 30px;
+  font-weight: 300;
 }
 
-.txt-animado span{
-    position: relative;
+.txt-animado span {
+  position: relative;
 }
 
-.txt-animado span::before{
-    content: "";
-    color: #ff9800;
-    animation: palavras 8s infinite; 
+.txt-animado span::before {
+  content: "";
+  color: #ff9800;
+  animation: palavras 8s infinite;
 }
 
-.txt-animado span::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    border-left: 2px solid white;
-    right: -10px;
-    animation: cursor .6s infinite, digita 20s steps(15) infinite;
-    width: calc(100% + 10px);
-    background-color: #1a1a1a;
-    
-}   
+.txt-animado span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid white;
+  right: -10px;
+  animation: cursor 0.6s infinite, digita 20s steps(15) infinite;
+  width: calc(100% + 10px);
+  background-color: #1a1a1a;
+}
 
 @keyframes digita {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-        width: 0;
-    }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-        width: calc(100% + 10px);
-    }
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 10px);
+  }
 }
 
 @keyframes cursor {
-    0%{
-        border-left: 2px solid #1a1a1a;
-        
-    }
+  0% {
+    border-left: 2px solid #1a1a1a;
+  }
 }
 
 @keyframes palavras {
-    0%,50% {
-        content: "Rossi Sampaio";
-    }
-    51%, 100%{
-        content: ".Dev";
-    }
+  0%,
+  50% {
+    content: "Rossi Sampaio";
+  }
+  51%,
+  100% {
+    content: ".Dev";
+  }
 }
 
-
-
 .conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
 
 .btn {
-    width: 100%;
-    max-width: 100px;
-    height: 40px;
-    background-color: #1a1a1a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 100%;
+  max-width: 100px;
+  height: 40px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 .btn:hover {
-    background-color: #ff9800;
+  background-color: #ff9800;
 }
 
-.login{
-    width: 250px;
-    height: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.login {
+  width: 250px;
+  height: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.mensagem{
-    
-    width: 500px;
-    height: 30px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.mensagem {
+  width: 500px;
+  height: 30px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-
