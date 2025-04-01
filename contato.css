@@ -164,3 +164,104 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .txt-animado {
+    font-size: 24px;
+  }
+
+  .Menu a {
+    font-size: 16px;
+    margin: 5px 8px;
+  }
+
+  img {
+    max-width: 150px;
+    margin: 15px auto;
+  }
+
+  section {
+    max-width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+  }
+
+  a {
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 475px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .txt-animado {
+    font-size: 20px;
+  }
+
+  .Menu a {
+    font-size: 14px;
+    margin: 5px 6px;
+  }
+
+  img {
+    max-width: 120px;
+    margin: 10px auto;
+  }
+
+  section {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 20px 0;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
